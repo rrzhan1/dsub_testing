@@ -1,0 +1,1 @@
+aws s3 cp --sse AES256 /efs/home/rrzhan1/testing_files/5M.txt ssssss3/5M/f1.txt

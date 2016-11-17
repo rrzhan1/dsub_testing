@@ -1,0 +1,5 @@
+for i in `seq 1 100`;
+do
+	dsub --image java 'java -classpath /efs/home/rrzhan1/classpath WriteOneFileToEFS 500000000 /efs/home/rrzhan1/testing_files' > batch_write_EFS_500M_i$i.out 2> batch_write_EFS_500M_i$i.err
+done
+

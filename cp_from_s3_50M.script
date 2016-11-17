@@ -1,0 +1,2 @@
+aws s3 cp s3://genome-analytics-scratch-space/rrzhan1/50M.txt /tmp/50M.txt
+

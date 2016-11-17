@@ -1,0 +1,5 @@
+for i in `seq 1 100`;
+do
+	dsub --image docker-registry.science-at-scale.io/genome-analytics/rdsublite 'time /efs/home/rrzhan1/testing_scripts/cp_to_s3_50M.script' > batch_cp_to_s3_50M_i$i.out 2> batch_cp_to_s3_50M_i$i.err
+done
+

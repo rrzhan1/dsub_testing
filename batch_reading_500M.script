@@ -1,0 +1,5 @@
+for i in `seq 1 100`;
+do
+	dsub --image java 'java -classpath /efs/home/rrzhan1/classpath ReadOneFileFromEFS /efs/home/rrzhan1/testing_files/500M.txt' > batch_read_EFS_500M_i$i.out 2> batch_read_EFS_500M_i$i.err
+done
+

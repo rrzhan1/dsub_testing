@@ -1,0 +1,17 @@
+for i in `seq 1 5`;
+do
+	time Rscript /efs/home/rrzhan1/testing_scripts/write.r 2500000 /efs/home/rrzhan1/5M$i.txt
+done
+for i in `seq 1 5`;
+do
+        time Rscript /efs/home/rrzhan1/testing_scripts/write.r 25000000 /efs/home/rrzhan1/50M$i.txt
+done
+for i in `seq 1 5`;
+do
+	time Rscript /efs/home/rrzhan1/testing_scripts/read.r /efs/home/rrzhan1/5M$i.txt
+done
+for i in `seq 1 5`;
+do
+        time Rscript /efs/home/rrzhan1/testing_scripts/read.r /efs/home/rrzhan1/50M$i.txt
+done
+

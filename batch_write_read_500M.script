@@ -1,0 +1,5 @@
+for i in `seq 1 100`;
+do
+	dsub --image java 'java -classpath /efs/home/rrzhan1/classpath ReadAndWrite 500000000' > batch_read_write_500M_i$i.out 2> batch_read_write_500M_i$i.err
+done
+

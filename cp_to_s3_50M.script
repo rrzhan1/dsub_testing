@@ -1,0 +1,2 @@
+aws s3 cp --sse AES256 /efs/home/rrzhan1/testing_files/50M.txt s3://genome-analytics-scratch-space/rrzhan1/50M_$( date +%N )_.txt
+

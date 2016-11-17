@@ -1,0 +1,3 @@
+dsub --memory 6000 --image r-base '/efs/home/rrzhan1/testing_scripts/overall_r_testing.script'
+dsub --image r-base 'Rscript /efs/home/rrzhan1/testing_scripts/generate_plot.r /efs/home/rrzhan1/STDERR /efs/home/rrzhan1/plot.jpg'
+

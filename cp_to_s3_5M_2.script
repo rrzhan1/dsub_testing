@@ -1,0 +1,3 @@
+java -classpath /efs/home/rrzhan1/classpath/ WriteOneFileToEFS_2 5000000 /tmp
+time aws s3 cp --sse AES256 /tmp/5M_2.txt s3://genome-analytics-scratch-space/rrzhan1/5M_$( date +%N )_.txt
+
